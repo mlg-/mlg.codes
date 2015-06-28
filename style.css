@@ -5,7 +5,7 @@ html {
   padding: 0;
   background-image: url('images/typewriter.jpg');
   background-attachment: fixed;
-  font-family: 'Inconsolata', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
@@ -14,10 +14,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Inconsolata'
+}
+
 h1 {
   color: #4AAAA5;
   max-width: 1078px;
-  font-size: 56px;
+  font-size: 60px;
   margin: 40px 0;
 }
 
@@ -29,9 +33,9 @@ h2 {
 }
 
 p {
-  font-family: 'Lora';
   color: gray;
   font-size: 35px;
+  line-height: 1.4em;
 }
 
 a {
@@ -42,6 +46,17 @@ a {
 a:hover {
   color: #7ACCC8;
   text-decoration: underline;
+}
+
+a.name {
+  color: #4AAAA5;
+  max-width: 1078px;
+  font-size: 60px;
+  margin: 40px 0;
+}
+
+a.name:hover {
+  text-decoration: none;
 }
 
 ul {
@@ -59,7 +74,7 @@ ul:after {
 }
 
 li {
-  width: 15%;
+  width: 10%;
   float: left;
   color: #000;
   font-size: 18px;
@@ -82,6 +97,16 @@ i {
 i:hover {
   color: #7ACCC8;
 }
+
+span {
+  color: black;
+  transition: color 200ms ease;
+}
+
+span.type {
+  color: transparent;
+}
+
 
 #wrapper {
   width: 90%;
@@ -109,18 +134,6 @@ i:hover {
   transform: translateY(-50%);
 }
 
-@media (max-width: 600px) {
-  #content-wrapper{
-    margin-top: 0px;
-    top: 30%;
-  }
-  p {
-    font-size: 20px;
-  }
-  li {
-    padding: 10px;
-  }
-}
 
 #footer {
   width: 100%;
@@ -128,4 +141,51 @@ i:hover {
   background-color: #4AAAA5;
   position: absolute;
   bottom: 0;
+}
+
+table tr td {
+  padding: 20px;
+  font-size: 20px;
+  color: #35404F;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.writing-container {
+  font-size: 18px;
+  margin: 10px 80px;
+  min-height: 100%;
+  background-color: #E8E9E9;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+.writing-container p {
+  color: black;
+  font-size: 18px;
+  margin: 10px 80px;
+  min-height: 100%;
+  background-color: #E8E9E9;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  #content-wrapper{
+    margin-top: 0px;
+    top: 30%;
+  }
+  h1{
+    font-size: 45px;
+    text-align: center;
+    line-height: 1.2em;
+    } h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 20px;
+  }
+  li {
+    padding: 10px;
+  }
 }

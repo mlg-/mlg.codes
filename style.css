@@ -21,20 +21,20 @@ h1, h2, h3, h4 {
 h1 {
   color: #4AAAA5;
   max-width: 1078px;
-  font-size: 60px;
+  font-size: 40px;
   margin: 40px 0;
 }
 
 h2 {
   color: #35404F;
   max-width: 1078px;
-  font-size: 46px;
+  font-size: 30px;
   margin: 40px 0;
 }
 
 p {
   color: gray;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 1.4em;
 }
 
@@ -74,7 +74,7 @@ ul:after {
 }
 
 li {
-  width: 10%;
+  width: 20%;
   float: left;
   color: #000;
   font-size: 18px;
@@ -173,19 +173,27 @@ table tr td {
 @media (max-width: 600px) {
   #content-wrapper{
     margin-top: 0px;
-    top: 30%;
+    top: 55%;
+    min-height: 110%;
+    margin-bottom: 50px;
   }
   h1{
     font-size: 45px;
     text-align: center;
     line-height: 1.2em;
-    } h2 {
+    } 
+  h2 {
     font-size: 35px;
+    text-align: center;
   }
   p {
     font-size: 20px;
   }
   li {
-    padding: 10px;
+    padding: 35px;
+    width: 10%;
+  }
+  #footer {
+    display: none;
   }
 }
